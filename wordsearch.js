@@ -1,3 +1,5 @@
+//Pair prgramming exercise with @afreeda-m
+
 const wordSearch = (letters, word) => {
   // if array not empty check for word
   if (!letters.length) {
