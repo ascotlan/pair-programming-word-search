@@ -104,4 +104,25 @@ describe("#wordSearch()", function () {
 
     assert.isTrue(result);
   });
+
+  it("should return false if the word is present", function () {
+    const result = wordSearch(undefined, "");
+    assert.isFalse(result);
+  });
+
+  it("should return false if the word is present", function () {
+    const result = wordSearch([
+      ["A", "W", "C", "F", "Q", "U", "A", "L"],
+      ["S", "E", "I", "N", "F", "E", "L", "D"],
+      ["Y", "F", "C", "F", "Q", "U", "A", "L"],
+      ["H", "M", "J", "T", "F", "V", "R", "G"],
+      ["W", "H", "C", "S", "R", "E", "N", "L"],
+      ["B", "F", "R", "E", "A", "E", "O", "B"],
+      ["U", "B", "T", "W", "N", "P", "R", "I"],
+      ["O", "D", "C", "A", "K", "N", "A", "S"],
+      ["E", "Z", "K", "F", "Q", "U", "A", "L"],
+    ]);
+
+    assert.isFalse(result);
+  });
 });
